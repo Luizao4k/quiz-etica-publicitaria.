@@ -1,0 +1,442 @@
+{
+  "perfis": [
+    {
+      "id": "ARCO_E_FLECHA",
+      "titulo": "Carta Arco e Flecha",
+      "subtitulo": "Seu Perfil é de Execução",
+      "descricao": "Você é uma pessoa pontual e focada em resultados. Prioriza estabilidade financeira e segurança no emprego. Segue instruções e prazos sem questionar. Evita conflitos e riscos, mesmo que isso signifique se acomodar em práticas comuns. Valoriza seus próprios interesses e busca atender às expectativas dos clientes sem se envolver em questões éticas mais profundas, contribuindo para a desconfiança da sociedade em relação à publicidade.",
+      "detalhes": [
+        "Enxerga o estágio como uma lista de tarefas a ser concluída para ir para casa no fim do dia. Entende que quem estagia não está em posição de contestar, mesmo diante de argumentos enganosos na publicidade.",
+        "É pontual, segue prazos e instruções sem questionar. Entrega resultados sem desafiar normas ou políticas institucionais controversas, executando metas corporativas.",
+        "Valoriza a segurança no emprego e a estabilidade financeira, mantendo foco no trabalho e evitando embates, especialmente com clientes ou chefes/líderes, contribuindo para um ambiente produtivo.",
+        "Prefere não correr riscos, mesmo que essa atitude signifique reproduzir estereótipos.",
+        "Prioriza fatores pessoais ao tomar decisões, valorizando a ética de bem-viver.",
+        "Não considera o impacto de suas decisões publicitárias no público consumidor porque prioriza seus próprios interesses sem abrir espaço para sacrifícios pelo outro.",
+        "Adepto à cultura do individualismo, exalta os direitos individuais, a autonomia, a felicidade; viver e desfrutar.",
+        "Valoriza o ditado popular 'o cliente sempre tem razão', privilegedando a satisfação do anunciante para não se incomodar nem se envolver.",
+        "Apresenta tendência de se acomodar no status quo, sem enfrentar desafios que exigem mudanças significativas.",
+        "Demonstra indiferença a questões éticas e morais na atividade publicitária, reforçando a ideia de que a publicidade não é totalmente confiável."
+      ]
+    },
+    {
+      "id": "ESPELHO",
+      "titulo": "Carta Espelho",
+      "subtitulo": "Seu Perfil é de Autoconfiança",
+      "descricao": "Você é uma pessoa ambiciosa e determinada. Capaz de tomar decisões ágeis, nem sempre reflete sobre as implicações éticas. Decidida em crescer profissionalmente, trabalha com metas claras. Às vezes não segue os princípios da transparência e da veracidade nos relacionamentos da atividade publicitária. Apresenta dificuldade em flexibilizar suas opiniões, colocando seus próprios sentimentos e valores individuais acima de normas morais, empresariais e sociais.",
+      "detalhes": [
+        "Assume riscos para alcançar o sucesso, mas pode ser visto como insensível devido ao foco em si mesmo.",
+        "Questiona padrões ou normas, contanto que não prejudiquem seu progresso profissional.",
+        "Prioriza seus próprios interesses em detrimento do coletivo, sem equilibrar o êxito individual com o trabalho em equipe.",
+        "Em situações complexas, pode agir de maneira egoísta para se proteger.",
+        "Apresenta dificuldade em tomar decisões que comprometam seus valores pessoais.",
+        "Resiste a mudanças e feedbacks, demonstrando excesso de confiança e traços narcisistas.",
+        "Pode ser percebida como uma pessoa autoritária, especialmente ao defender suas opiniões e valores de forma direta e objetiva.",
+        "Prioriza seu bem-viver ao tomar decisões éticas, confiando na correção ética de suas ações e julgamentos, sem questionar a moralidade e a legalidade de seus atos.",
+        "Abre mão de valores morais, se necessário, para persuadir ou convencer o público-alvo.",
+        "Seus comportamentos podem levar a uma visão distorcida sobre injustiças, afetando outros e a si mesmo."
+      ]
+    },
+    {
+      "id": "BALANCA",
+      "titulo": "Carta Balança",
+      "subtitulo": "Seu Perfil é de Equilíbrio",
+      "descricao": "Você é uma pessoa habilidosa para lidar com as exigências profissionais de anunciantes e agências sem renunciar a seus próprios valores pessoais, assegurando que suas decisões estejam alinhadas a princípios éticos universais. Sua abordagem de buscar promover interesses comuns pode, no entanto, resultar em uma postura permissiva diante da criação e da manutenção de estereótipos nas mensagens publicitárias.",
+      "detalhes": [
+        "Defende os interesses comerciais de anunciantes e das empresas de comunicação publicitária.",
+        "Aceita pressões para assegurar a sobrevivência da empresa e proteger empregos, comprometendo-se com o benefício mútuo e com o sucesso coletivo da equipe e da organização.",
+        "Concilia interesses particulares com a defesa às normas e princípios institucionais empresariais.",
+        "Trabalha para manter um clima organizacional humano e agradável para a agência e seus clientes, atuando como mediador para resolver conflitos quando surgem interesses divergentes.",
+        "Demonstra flexibilidade ao ajustar suas ações às circunstâncias do ambiente de trabalho, resguardando valores, costumes, rituais e tradições do anunciante nas estratégias publicitárias.",
+        "Evita tomar partido em situações controversas para preservar a boa relação com colegas e superiores, buscando integração, pertencimento e o fortalecimento da rede profissional.",
+        "Aceita determinados comportamentos comuns entre colegas e práticas recorrentes no mercado publicitário, justificando-os com a ideia de que 'Publicidade é assim mesmo'.",
+        "Ao seguir ordens de pessoas em posição de autoridade, alega estar 'apenas atendendo pedidos'.",
+        "A obediência à autoridade de um superior e o exemplo dos pares interfere no seu comportamento ético.",
+        "Ao se comprometer a preservar a imagem do cliente, da empresa de publicidade em que trabalha ou até mesmo a própria, pode acabar ignorando desigualdades e injustiças no processo."
+      ]
+    },
+    {
+      "id": "ESPADA",
+      "titulo": "Carta Espada",
+      "subtitulo": "Seu Perfil é de Justiça",
+      "descricao": "Você é uma pessoa ética, autêntica e comprometida com a transparência. Cria estratégias publicitárias alinhadas aos valores do público e da sociedade. Possui sensibilidade moral para identificar conflitos éticos, evitando reforçar estereótipos e buscando uma publicidade educativa. Resiliente, valoriza a integridade, denuncia injustiças e trabalha para transformar seu espaço profissional com senso de responsabilidade social.",
+      "detalhes": [
+        "Planeja com foco nos valores do público-alvo, avaliando o impacto positivo ou negativo da estratégia publicitária na vida das pessoas.",
+        "Preocupa-se com todos os públicos envolvidos na indústria publicitária, esforçando-se pelo que é justo para todos.",
+        "Acredita em uma publicidade educadora, próxima da realidade e crítica. Uma publicidade que debate e problematiza, além de objetivos comerciais.",
+        "Evita reforçar estereótipos, considerando implicações morais durante o processo de planejamento, criação e produção da mensagem publicitária.",
+        "Procura fazer a diferença na profissão, adotando práticas profissionais cidadãs ao tomar decisões na atividade publicitária para não ultrapassar limites éticos.",
+        "Preza pela veracidade nas mensagens publicitárias e nos relacionamentos profissionais.",
+        "Denuncia injustiças publicamente, mesmo diante de críticas ou desvalorização da sua postura ética.",
+        "Aprecia a autenticidade, alinhando seus princípios aos valores da sociedade, apesar das pressões do ambiente publicitário.",
+        "Defende seus direitos com o objetivo de transformar seu espaço de atuação profissional, desafiando normas e práticas do mercado publicitário que considera inadequadas.",
+        "Prioriza a ética e a integridade acima de conveniências no mundo do trabalho publicitário, contribuindo para a credibilidade da indústria da propaganda."
+      ]
+    }
+  ],
+  "situacoes": [
+    {
+      "id": "s1",
+      "numero": 1,
+      "titulo": "Situação #001: Briefing da Perfumaria e a Região Norte",
+      "enunciado": "Em mais uma semana no estágio, minha chefe avisa a toda equipe que chegou na agência um job de uma renomada perfumaria de abrangência nacional: desenvolver uma campanha completa para uma nova linha de cosméticos, com fragrâncias florais inspiradas nos estados do Norte do Brasil, voltada para jovens entre 25 a 35 anos de regiões metropolitanas. Eu recebo acesso ao documento com informações sobre o produto e ao que inspirou a criação dele. São elementos relacionados à floresta amazônica, cores nos tons de verde e marrom, árvores (sumaúma e samaúma), vitórias-régias, rios, araras, onças, mapa dos estados, e frutos como o açaí, andiroba e o guaraná. Diante desse cenário, eu:",
+      "opcoes": [
+        {
+          "id": "s1-a1",
+          "texto": "Decido que, se o cliente pediu, então vou entregar exatamente como está no briefing.",
+          "perfilAlvo": "ARCO_E_FLECHA"
+        },
+        {
+          "id": "s1-a2",
+          "texto": "Apesar de não concordar totalmente com as referências, não contesto e sigo o briefing do cliente à risca.",
+          "perfilAlvo": "BALANCA"
+        },
+        {
+          "id": "s1-a3",
+          "texto": "Uso o briefing apenas como guia e faço um estudo paralelo em busca de outras referências da região Norte do Brasil.",
+          "perfilAlvo": "ESPADA"
+        },
+        {
+          "id": "s1-a4",
+          "texto": "Busco atender às demandas do cliente. Até porque falar da Amazônia está em alta, gera engajamento. Vai ser uma boa pra mim e pra imagem da agência.",
+          "perfilAlvo": "ESPELHO"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "numero": 2,
+      "titulo": "Situação #002: Key Visual e Estereótipos de Gênero",
+      "enunciado": "Esboçando diferentes versões de key visual (KV), utilizo várias imagens de pessoas usando as fragrâncias da nova linha de cosméticos. Em uma das ideias, aparece um homem experimentando perfumes. O meu supervisor de estágio, ao ver o esboço com a imagem do homem, torce o nariz e diz que é melhor descartar essa ideia e excluir esse rascunho porque “perfume floral é mais coisa de mulher”. Então, eu:",
+      "opcoes": [
+        {
+          "id": "s2-a1",
+          "texto": "Concordo e descarto a imagem sem falar nada.",
+          "perfilAlvo": "ARCO_E_FLECHA"
+        },
+        {
+          "id": "s2-a2",
+          "texto": "Até penso em excluir, mas argumento que existem homens que gostam de aromas mais suaves, e continuo trabalhando nos esboços.",
+          "perfilAlvo": "ESPELHO"
+        },
+        {
+          "id": "s2-a3",
+          "texto": "Defendo a minha ideia e digo que inserir um homem poderia ser chamativo e atrair atenção do público, por ser incomum.",
+          "perfilAlvo": "ESPADA"
+        },
+        {
+          "id": "s2-a4",
+          "texto": "Sugiro adaptar a ideia para um homem escolhendo um perfume para presentear sua esposa.",
+          "perfilAlvo": "BALANCA"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "numero": 3,
+      "titulo": "Situação #003: Brainstorm COP30 e Representatividade Regional",
+      "enunciado": "Eu e os demais membros da agência fomos chamados para uma reunião de brainstorm para uma campanha tematizada da COP30 (30ª Conferência da ONU sobre Mudanças Climáticas). O evento teve como sede a cidade de Belém do Pará. A ideia era criar uma campanha que mostrasse um pouco da cultura local para os visitantes. Durante a reunião, percebi que os profissionais presentes na sala não eram nortistas e não conheciam bem a região. Então, eu decidi:",
+      "opcoes": [
+        {
+          "id": "s3-a1",
+          "texto": "Ficar em silêncio, afinal não tenho nada a ver com isso.",
+          "perfilAlvo": "ARCO_E_FLECHA"
+        },
+        {
+          "id": "s3-a2",
+          "texto": "Cochichar com meu colega, sem pensar em falar com meu chefe. Não me intrometer nem prejudicar meu crescimento na agência, já que eu só fazia estágio.",
+          "perfilAlvo": "ESPELHO"
+        },
+        {
+          "id": "s3-a3",
+          "texto": "Realizar pesquisas sobre a região Norte para compartilhar com a equipe na intenção de contribuir para a reputação da agência e do anunciante.",
+          "perfilAlvo": "BALANCA"
+        },
+        {
+          "id": "s3-a4",
+          "texto": "Sugerir a contratação de uma consultoria com profissionais nortistas para palestrar na agência, a fim de trazer outros pontos de vista e novas ideias.",
+          "perfilAlvo": "ESPADA"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "numero": 4,
+      "titulo": "Situação #004: Selo Cruelty-Free Sem Comprovação",
+      "enunciado": "Minha supervisora de estágio traz uma demanda extra inesperada a ser entregue até o fim do expediente: o cliente pediu para adicionar no rótulo da embalagem uma imagem de um coelhinho semelhante ao selo da PETA nos produtos. Porém, no briefing não continha nenhuma informação de que a marca do anunciante, do segmento de cosméticos, é cruelty-free. Diante de tal situação, eu:",
+      "opcoes": [
+        {
+          "id": "s4-a1",
+          "texto": "Incluo a imagem, afinal tenho boletos pra pagar.",
+          "perfilAlvo": "ARCO_E_FLECHA"
+        },
+        {
+          "id": "s4-a2",
+          "texto": "Faço, mas putz… é mais uma alteraçãozinha, né?",
+          "perfilAlvo": "ESPELHO"
+        },
+        {
+          "id": "s4-a3",
+          "texto": "Deixo uma mensagem no sistema usado pela agência para organizar os projetos, esclarecendo o que é a PETA e o seu atestado de não-crueldade animal.",
+          "perfilAlvo": "BALANCA"
+        },
+        {
+          "id": "s4-a4",
+          "texto": "Converso com minha supervisora para explicar que tentar imitar o selo da PETA pode ser perigoso e comprometer a confiança dos consumidores na empresa.",
+          "perfilAlvo": "ESPADA"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "numero": 5,
+      "titulo": "Situação #005: Hora Extra e Limites no Expediente",
+      "enunciado": "Eu e o restante da equipe estamos mergulhados no trabalho que nem vemos o tempo passar. Ao ver o céu já escuro pelas janelas do escritório, percebo que são mais de 18h – horário do fim do expediente. Nenhum colega de trabalho parece querer ir embora. Como um incentivo, o chefe pede uma pizza, pois pelo visto todos irão virar a noite na agência. Eu então:",
+      "opcoes": [
+        {
+          "id": "s5-a1",
+          "texto": "Continuo trabalhando porque minha empolgação com as ideias tomando forma é maior que a vontade de ir embora.",
+          "perfilAlvo": "ESPELHO"
+        },
+        {
+          "id": "s5-a2",
+          "texto": "Desligo o computador e vou embora, afinal já deu o meu horário de estágio.",
+          "perfilAlvo": "ARCO_E_FLECHA"
+        },
+        {
+          "id": "s5-a3",
+          "texto": "Comento com colegas que o expediente está no fim e que precisamos descansar a mente para voltar com todo o gás no dia seguinte.",
+          "perfilAlvo": "BALANCA"
+        },
+        {
+          "id": "s5-a4",
+          "texto": "Pergunto para a chefe se vai rolar pagamento de hora extra. Digo que ficar depois do horário está virando hábito na agência e que estabelecer um limite seria mais justo.",
+          "perfilAlvo": "ESPADA"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "numero": 6,
+      "titulo": "Situação #006: Sobrecarga por Afastamento de Colega",
+      "enunciado": "Uma profissional da equipe está afastada por burnout, e agora a empresa de consultoria tem uma pessoa a menos no time. Recebo um e-mail do RH com a proposta de quebrar um galho e dar prosseguimento às tarefas que antes eram da minha colega. Eu:",
+      "opcoes": [
+        {
+          "id": "s6-a1",
+          "texto": "Aceito porque vai ser uma ótima oportunidade para desenvolver novas habilidades.",
+          "perfilAlvo": "BALANCA"
+        },
+        {
+          "id": "s6-a2",
+          "texto": "Aceito, mesmo não querendo. Morro de medo de me dispensarem do estágio se eu recusar.",
+          "perfilAlvo": "ARCO_E_FLECHA"
+        },
+        {
+          "id": "s6-a3",
+          "texto": "Respondo o e-mail dizendo que só aceito mediante um pagamento extra.",
+          "perfilAlvo": "ESPELHO"
+        },
+        {
+          "id": "s6-a4",
+          "texto": "Indico uma colega de equipe mais experiente para essa função.",
+          "perfilAlvo": "ESPADA"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "numero": 7,
+      "titulo": "Situação #007: Atribuição de Créditos em Reunião",
+      "enunciado": "Estou em uma reunião para assistir a apresentação de um projeto para um cliente. Várias propostas são exibidas. Ao fim da exposição, o cliente ama o projeto que minha colega fez. Mas na hora de parabenizar, elogia outro membro da equipe – um diretor de arte que estava apenas assistindo e que não se manifesta. Por sua vez, a responsável pelo trabalho se encolhe na mesa e fica calada. Meu chefe, empolgado com o feedback positivo e com a probabilidade de fechar contrato, não corrige o equívoco. Diante dessa situação, eu:",
+      "opcoes": [
+        {
+          "id": "s7-a1",
+          "texto": "Não digo nada, já que eu apenas faço estágio. Nada que eu fale fará diferença.",
+          "perfilAlvo": "ARCO_E_FLECHA"
+        },
+        {
+          "id": "s7-a2",
+          "texto": "Acho injusto, mas fico em silêncio pra não quebrar o clima de comemoração.",
+          "perfilAlvo": "ESPELHO"
+        },
+        {
+          "id": "s7-a3",
+          "texto": "Tento corrigir o cliente de forma leve, parabenizando e elogiando o trabalho da minha colega na frente dele.",
+          "perfilAlvo": "BALANCA"
+        },
+        {
+          "id": "s7-a4",
+          "texto": "No meio da reunião mando um WhatsApp para o diretor de arte, comentando que a atitude dele não foi legal.",
+          "perfilAlvo": "ESPADA"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "numero": 8,
+      "titulo": "Situação #008: Assédio Moral e Direitos do Estagiário",
+      "enunciado": "Há seis meses faço estágio em uma empresa de comunicação. Outros colegas de estágio foram demitidos ou se demitiram, sem deixar claro os motivos para sair da empresa. A partir desse período, meus supervisores começam a pedir favores além das minhas responsabilidades, pedindo que eu fique até mais tarde, sempre fazendo comentários e piadas insinuando que se eu não fizer exatamente o que eles pedem, serei a próxima pessoa a sair. Diante desse cenário, eu:",
+      "opcoes": [
+        {
+          "id": "s8-a1",
+          "texto": "Aceito todas as demandas porque tenho medo de perder o estágio.",
+          "perfilAlvo": "ARCO_E_FLECHA"
+        },
+        {
+          "id": "s8-a2",
+          "texto": "Recuso as demandas porque discordo dessa conduta e confio que posso conseguir um estágio melhor.",
+          "perfilAlvo": "ESPELHO"
+        },
+        {
+          "id": "s8-a3",
+          "texto": "Tento conversar com os supervisores para explicar que pode prejudicar meu desempenho acadêmico, já que o estágio só é possível porque estou fazendo faculdade.",
+          "perfilAlvo": "BALANCA"
+        },
+        {
+          "id": "s8-a4",
+          "texto": "Procuro o RH para relatar a situação e perguntar o que pode ser feito para que meus direitos, garantidos pela lei do estágio, sejam respeitados.",
+          "perfilAlvo": "ESPADA"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "numero": 9,
+      "titulo": "Situação #009: Naming 'MaisFit' e Rotulagem Nutricional",
+      "enunciado": "A agência de branding onde eu trabalho recebeu a responsabilidade de criar um nome de marca para um biscoito integral de uma indústria no ramo alimentício. Visando despertar interesse no consumidor, o nome “MaisFit” objetiva comunicar a ideia de que o produto é fit e saudável, mesmo contendo gordura saturada e sódio identificados na parte frontal da embalagem. Sabendo que a comunicação desenvolvida em torno do nome pode gerar questionamentos por parte de consumidores, eu:",
+      "opcoes": [
+        {
+          "id": "s9-a1",
+          "texto": "Sigo com o projeto conforme planejado, acreditando que o nome é eficiente, mesmo com possíveis reclamações de consumidores.",
+          "perfilAlvo": "ARCO_E_FLECHA"
+        },
+        {
+          "id": "s9-a2",
+          "texto": "Expresso minhas preocupações com colegas de equipe, mas sem largar o projeto do nome, já que a responsabilidade final é do cliente.",
+          "perfilAlvo": "ESPELHO"
+        },
+        {
+          "id": "s9-a3",
+          "texto": "Busco conversar com a minha liderança na agência para alterar o nome, de forma a melhorar a clareza das informações para os consumidores.",
+          "perfilAlvo": "ESPADA"
+        },
+        {
+          "id": "s9-a4",
+          "texto": "Sugiro revisar o nome para evitar problemas legais diante das regras de rotulagem nutricional da Anvisa e não afetar a reputação da agência e do anunciante.",
+          "perfilAlvo": "BALANCA"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "numero": 10,
+      "titulo": "Situação #010: Representatividade Indígena Urbana",
+      "enunciado": "A produtora de vídeo onde eu estagio recebeu a tarefa de desenvolver um roteiro para a campanha da Semana dos Povos Indígenas. Decidi usar no storyboard a imagem de uma mulher indígena caminhando em um centro urbano, vestindo roupas casuais e brincos que remetem à sua cultura. Ao compartilhar a proposta, profissionais da equipe expressaram a preocupação de que talvez as pessoas não percebam que aquela mulher é indígena, por não estar caracterizada como tal. Diante disso, eu:",
+      "opcoes": [
+        {
+          "id": "s10-a1",
+          "texto": "Acho válida a preocupação, mas sigo fazendo o que havia planejado.",
+          "perfilAlvo": "ESPELHO"
+        },
+        {
+          "id": "s10-a2",
+          "texto": "Modifico e caracterizo mais a mulher indígena. Acho melhor não correr riscos, né?",
+          "perfilAlvo": "ARCO_E_FLECHA"
+        },
+        {
+          "id": "s10-a3",
+          "texto": "Explico quais foram minhas referências e como os povos indígenas também estão presentes no contexto urbano.",
+          "perfilAlvo": "BALANCA"
+        },
+        {
+          "id": "s10-a4",
+          "texto": "Levo o esboço até a minha supervisora de estágio e proponho consultarmos a opinião de grupos e coletivos indígenas.",
+          "perfilAlvo": "ESPADA"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "numero": 11,
+      "titulo": "Situação #011: Publicidade Infantil Persuasiva",
+      "enunciado": "Em uma reunião de trabalho na empresa de produção de conteúdo, recebo a demanda de criar um roteiro para a divulgação de um novo brinquedo infantil. A comunicação circulará no canal do YouTube de uma influenciadora digital mirim com mais de 2 milhões de inscritos. No briefing estão expostos os seguintes direcionamentos: usar cores chamativas, destacar os detalhes da embalagem e do produto, utilizar um tom de voz infantil, enfatizar o fato de o brinquedo ser colecionável para despertar o desejo de completar a coleção e incentivar as crianças a pedirem o brinquedo aos seus responsáveis. Diante dessa situação, eu:",
+      "opcoes": [
+        {
+          "id": "s11-a1",
+          "texto": "Faço meu trabalho, recebo pra isso. E as crianças de hoje são inteligentes e espertas para lidar com as intenções mercadológicas das marcas.",
+          "perfilAlvo": "ARCO_E_FLECHA"
+        },
+        {
+          "id": "s11-a2",
+          "texto": "Sigo as instruções do briefing, mesmo me sentindo desconfortável com o apelo persuasivo dirigido às crianças. Não quero problemas para o meu lado.",
+          "perfilAlvo": "ESPELHO"
+        },
+        {
+          "id": "s11-a3",
+          "texto": "Me recuso a incluir os direcionamentos porque a estratégia publicitária explora a inocência do público infantil como forma de gerar consumo precoce.",
+          "perfilAlvo": "ESPADA"
+        },
+        {
+          "id": "s11-a4",
+          "texto": "Alerto que poderemos ter problemas com o Conar porque a abordagem sugerida não protege as crianças da promoção persuasiva.",
+          "perfilAlvo": "BALANCA"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "numero": 12,
+      "titulo": "Situação #012: Uso de Inteligência Artificial na Redação",
+      "enunciado": "Durante um expediente muito atarefado no estágio, meu chefe me chama para produzir a redação de um folder informativo para uma empresa de gerenciamento de resíduos, com prazo apertado. Também estou com muitos trabalhos da faculdade, sem muita cabeça para me concentrar e sem ideia para criar e escrever. Diante desse quadro, eu:",
+      "opcoes": [
+        {
+          "id": "s12-a1",
+          "texto": "Copio e colo o conteúdo do briefing numa IA e dou um comando como “crie um texto com tais e tais palavras-chave” para ela resolver para mim e me dar o texto praticamente pronto.",
+          "perfilAlvo": "ARCO_E_FLECHA"
+        },
+        {
+          "id": "s12-a2",
+          "texto": "Arrisco e tento criar com papel e caneta mesmo. Só depois acesso uma IA para pedir que melhore os textos que eu criei, deixando-os mais técnicos e explicativos, de acordo com o que eu preciso para o segmento do anunciante.",
+          "perfilAlvo": "ESPELHO"
+        },
+        {
+          "id": "s12-a3",
+          "texto": "Uso uma IA para dar uma mãozinha no processo criativo, auxiliando a construir referências e a tirar ideias iniciais. Não dá para deixar tudo para a IA. Ela é muito genérica e pouco original.",
+          "perfilAlvo": "BALANCA"
+        },
+        {
+          "id": "s12-a4",
+          "texto": "Recorro a uma IA para rapidamente entender melhor sobre o negócio do anunciante, seu portfólio de produtos, pesquisar sobre segmento e público, compreender o universo e o território da marca e assim ter as mínimas condições de criar sem tanta insegurança.",
+          "perfilAlvo": "ESPADA"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "numero": 13,
+      "titulo": "Situação #013: Alteração de Diversidade em Mascote",
+      "enunciado": "Recebi a demanda de criar um mascote para representar uma empresa de materiais de construção, localizada na região Norte do país. Com base no posicionamento da marca, elaborei o esboço de um personagem com trajes de super-herói, cabelos cacheados escuros, pele parda e expressão sorridente, refletindo características que dialogam com o público local e comunicam empatia e proximidade. Após a apresentação da proposta, o cliente pediu alterações na aparência do personagem: substituir os cabelos cacheados por fios lisos e claros, e mudar o tom de pele para a cor branca. Diante das solicitações, eu:",
+      "opcoes": [
+        {
+          "id": "s13-a1",
+          "texto": "Abro o Illustrator e faço as alterações conforme solicitado pelo cliente porque quem paga, manda.",
+          "perfilAlvo": "ARCO_E_FLECHA"
+        },
+        {
+          "id": "s13-a2",
+          "texto": "Reluto em mudar a aparência porque me apeguei ao design do personagem. Mas para agradar o cliente, eu faço as alterações.",
+          "perfilAlvo": "ESPELHO"
+        },
+        {
+          "id": "s13-a3",
+          "texto": "Crio uma nova proposta, alterando o cabelo para uma textura ondulada, quase lisa, e a pele para alguns tons mais claros.",
+          "perfilAlvo": "BALANCA"
+        },
+        {
+          "id": "s13-a4",
+          "texto": "Discordo das alterações e defendo a coerência do mascote com o briefing e com as características da marca.",
+          "perfilAlvo": "ESPADA"
+        }
+      ]
+    }
+  ]
+}
