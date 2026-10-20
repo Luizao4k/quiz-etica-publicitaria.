@@ -38,6 +38,9 @@ export class RegistrarResposta {
    * @returns Lista das opções escolhidas, na ordem de registro
    * das situações distintas.
    */
+  obterResposta(situacaoId: string): Opcao | undefined {
+    return this.respostas.get(situacaoId);
+  }
   obterRespostas(): Opcao[] {
     return Array.from(this.respostas.values());
   }
