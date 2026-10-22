@@ -85,22 +85,15 @@
 
 
 /* Celulares */
+/* Telas menores */
 @media (max-width: 48rem) {
-  .inicio-arte {
-    width: 100%;
-    height: 100%;
-  }
   .inicio-botao {
-    top: 65%;
-    left: 42.3%;
-    width: 15.4%;
-    height: 5.5%;
+    top: 87.7%;
   }
-
 }
 
 /* Notebooks e computadores */
-@media (min-width: 1024px) and (min-height: 700px) {
+@media (min-width: 1024px) and (min-height: 700px) and (min-aspect-ratio: 1/1) {
   .inicio-arte {
     width: 100%;
     height: 90%;
@@ -118,5 +111,16 @@
   .inicio-arte {
     width: 100%;
     height: 80%;
+  }
+}
+
+/* Ajuste fino para telas horizontais */
+@media (min-width: 1024px) and
+       (min-height: 700px) and
+       (min-aspect-ratio: 3/2) {
+
+  .inicio-botao {
+    width: 8.7%;
+    left: 45.6%;
   }
 }
