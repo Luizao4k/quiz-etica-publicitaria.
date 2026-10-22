@@ -25,46 +25,20 @@ html {
 }
 
 body {
+  width: 100%;
   min-width: 320px;
   min-height: 100vh;
+  min-height: 100dvh;
   margin: 0;
+
   font-family: "TahomaQuiz", sans-serif;
   font-weight: 400;
-}
 
-/* Fundo roxo fixo */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-  background-color: #312964;
-  background-image: url("./presentation/assets/image/Fundo.png");
-  background-repeat: no-repeat;
+  background-image: url("./presentation/assets/image/fundo.webp");
+  background-size: cover;
   background-position: center;
-  background-size: cover;
-  pointer-events: none;
-}
-
-/* Curva laranja alinhada à imagem central */
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-
-  background-image: url("./presentation/assets/image/curva-laranja.png");
   background-repeat: no-repeat;
-  background-position: center calc(
-    50% + 0.21 * min(
-      100vw - 40px,
-      100dvh - 40px,
-      850px
-    )
-  );
-
-  background-size: cover;
-  pointer-events: none;
+  background-attachment: fixed;
 }
 
 button,
