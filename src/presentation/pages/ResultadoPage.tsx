@@ -1,8 +1,10 @@
+
 import { useState } from "react";
 
 import type { Quiz } from "../../domain/entities/Quiz";
 import type { ResultadoQuiz } from "../../application/use_cases/CalcularResultado";
 import { CartaPerfil } from "../components/CartaPerfil";
+import { BotaoCompartilhar } from "../components/BotaoCompartilhar";
 
 import "../styles/resultado.css";
 
@@ -25,14 +27,6 @@ const imagensCartas: Record<string, string> = {
     ESPADA: cartaEspada,
 };
 
-/**
- * Apresenta as cartas correspondentes aos perfis indicados no quiz.
- *
- * Cada carta mostra a frente e vira ao clique para revelar o verso. A mão
- * apontando fica sobre a primeira carta até o participante virar uma carta e
- * não volta durante esta execução; ao reiniciar o quiz, esta página é montada
- * de novo e a dica reaparece.
- */
 export function ResultadoPage({
     quiz,
     resultado,
@@ -70,13 +64,17 @@ export function ResultadoPage({
                     ))}
                 </div>
 
-                <button
-                    type="button"
-                    className="resultado-botao"
-                    onClick={onReiniciar}
-                >
-                    REFAZER O QUIZ
-                </button>
+                <div className="resultado-acoes">
+                    <BotaoCompartilhar />
+
+                    <button
+                        type="button"
+                        className="resultado-botao"
+                        onClick={onReiniciar}
+                    >
+                        REFAZER O QUIZ
+                    </button>
+                </div>
             </section>
         </main>
     );

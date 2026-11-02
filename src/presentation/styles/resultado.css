@@ -1,3 +1,4 @@
+
 .resultado-page {
   min-height: 100vh;
   min-height: 100dvh;
@@ -28,7 +29,7 @@
   letter-spacing: 0.02em;
 }
 
-/* As cartas ficam lado a lado quando há espaço (empate) e empilhadas nas telas estreitas. */
+/* Cartas dos perfis */
 .resultado-perfis {
   display: flex;
   flex-wrap: wrap;
@@ -37,27 +38,277 @@
   gap: 32px 28px;
 }
 
-/* Botão para reiniciar o quiz */
-.resultado-botao {
-  display: block;
+/* Área dos botões */
+.resultado-acoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 36px;
+}
+
+/* Aparência padronizada dos botões */
+.resultado-botao,
+.resultado-compartilhar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 180px;
   min-height: 46px;
-  margin: 36px auto 0;
   padding: 12px 22px;
-  border: 0;
+  border: 2px solid #312964;
   border-radius: 8px;
   background: #312964;
   color: #fff;
-  font: inherit;
+  font-family: "TahomaQuiz", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+/* Efeito ao passar o mouse */
+.resultado-botao:hover,
+.resultado-compartilhar:hover {
+  background: #f4a340;
+  border-color: #f4a340;
+  color: #312964;
+}
+
+/* Destaque de foco */
+.resultado-botao:focus-visible,
+.resultado-compartilhar:focus-visible {
+  outline: 3px solid #ee8222;
+  outline-offset: 3px;
+}
+
+/* Remove a margem individual do botão de reiniciar */
+.resultado-acoes .resultado-botao {
+  margin: 0;
+}
+
+/* ========================================
+   MODAL DE COMPARTILHAMENTO
+   ======================================== */
+
+/* Fundo escurecido */
+.resultado-compartilhar-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 20px;
+  background: rgb(20 16 48 / 65%);
+  backdrop-filter: blur(4px);
+}
+
+/* Caixa central do modal */
+.resultado-compartilhar-modal {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 460px;
+  max-height: calc(100vh - 40px);
+  max-height: calc(100dvh - 40px);
+  overflow-y: auto;
+  padding: 36px 28px 28px;
+  background: #f7f6f6;
+  border: 1px solid #e7e1ef;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgb(0 0 0 / 25%);
+  color: #312964;
+  text-align: center;
+  animation: resultado-modal-entrada 0.2s ease-out;
+}
+
+@keyframes resultado-modal-entrada {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.resultado-compartilhar-modal h2 {
+  margin: 0 24px 10px;
+  color: #312964;
+  font-family: "TahomaQuiz", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.resultado-compartilhar-descricao {
+  margin: 0 0 26px;
+  color: #5b5677;
+  font-family: "TahomaQuiz", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Botão de fechar */
+.resultado-compartilhar-fechar {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #312964;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.resultado-compartilhar-fechar:hover {
+  background: #e7e1ef;
+}
+
+/* Grade de redes sociais */
+.resultado-compartilhar-redes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.resultado-rede {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 9px;
+  min-width: 0;
+  padding: 8px 2px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: #312964;
+  font-family: "TahomaQuiz", sans-serif;
+  font-size: 12px;
   font-weight: 700;
   cursor: pointer;
   touch-action: manipulation;
 }
 
-.resultado-botao:hover {
-  background: #4338ca;
+.resultado-rede:hover {
+  background: #ece9f5;
 }
 
-.resultado-botao:focus-visible {
+/* Ícones de Facebook, X e WhatsApp */
+.resultado-rede img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+/* Ícone provisório do Instagram */
+.resultado-instagram-icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: #c13584;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+/* Campo do endereço do site */
+.resultado-link-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #312964;
+  font-family: "TahomaQuiz", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.resultado-link-container {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
+}
+
+.resultado-link-container input {
+  flex: 1;
+  box-sizing: border-box;
+  width: 0;
+  min-width: 0;
+  height: 46px;
+  padding: 0 12px;
+  border: 1px solid #d8d1e6;
+  border-radius: 8px;
+  background: #fff;
+  color: #312964;
+  font-family: "TahomaQuiz", sans-serif;
+  font-size: 13px;
+}
+
+.resultado-link-copiar {
+  flex-shrink: 0;
+  min-height: 46px;
+  padding: 0 16px;
+  border: 2px solid #312964;
+  border-radius: 8px;
+  background: #312964;
+  color: #fff;
+  font-family: "TahomaQuiz", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.resultado-link-copiar:hover {
+  background: #f4a340;
+  border-color: #f4a340;
+  color: #312964;
+}
+
+/* Confirmação de cópia */
+.resultado-compartilhar-mensagem {
+  margin: 14px 0 0;
+  color: #312964;
+  font-family: "TahomaQuiz", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Foco acessível dentro do modal */
+.resultado-compartilhar-modal button:focus-visible,
+.resultado-link-container input:focus-visible {
   outline: 3px solid #ee8222;
   outline-offset: 3px;
 }
@@ -71,8 +322,59 @@
   .resultado-container {
     padding: 24px 14px 32px;
   }
+
+  .resultado-acoes {
+    gap: 10px;
+  }
+
+  .resultado-botao,
+  .resultado-compartilhar {
+    padding: 12px 16px;
+  }
+
+  .resultado-compartilhar-overlay {
+    padding: 14px;
+  }
+
+  .resultado-compartilhar-modal {
+    padding: 34px 16px 22px;
+    border-radius: 16px;
+  }
+
+  .resultado-compartilhar-modal h2 {
+    font-size: 20px;
+  }
+
+  .resultado-compartilhar-redes {
+    gap: 2px;
+  }
+
+  .resultado-rede {
+    font-size: 11px;
+  }
+
+  .resultado-rede img,
+  .resultado-instagram-icone {
+    width: 40px;
+    height: 40px;
+  }
+
+  .resultado-link-container {
+    gap: 6px;
+  }
+
+  .resultado-link-container input {
+    padding: 0 8px;
+    font-size: 11px;
+  }
+
+  .resultado-link-copiar {
+    padding: 0 10px;
+    font-size: 11px;
+  }
 }
 
+/* Telas muito estreitas */
 @media (max-width: 360px) {
   .resultado-page {
     padding: 12px 8px;
@@ -80,5 +382,50 @@
 
   .resultado-container {
     padding: 20px 10px 28px;
+  }
+
+  .resultado-acoes {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .resultado-acoes > * {
+    width: 100%;
+  }
+
+  .resultado-botao,
+  .resultado-compartilhar {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .resultado-compartilhar-modal {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .resultado-compartilhar-redes {
+    gap: 0;
+  }
+
+  .resultado-rede {
+    font-size: 10px;
+  }
+
+  .resultado-link-copiar {
+    padding: 0 8px;
+    font-size: 10px;
+  }
+}
+
+/* Respeita a preferência por movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  .resultado-botao,
+  .resultado-compartilhar {
+    transition: none;
+  }
+
+  .resultado-compartilhar-modal {
+    animation: none;
   }
 }
