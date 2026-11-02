@@ -16,12 +16,14 @@ O projeto também tem como objetivo aplicar boas práticas de desenvolvimento de
 - [x] Registro de respostas por identificador, imutáveis depois de registradas.
 - [x] Cálculo do resultado com suporte a empates entre perfis.
 - [x] Testes automatizados da tentativa, dos casos de uso e do repositório.
+- [x] Implementação da interface do questionário, com a tela inicial e o botão INICIAR em destaque.
 - [x] Navegação entre as situações (avanço automático após a escolha e consulta de respostas anteriores) e indicador de progresso.
 - [x] Apresentação visual do resultado: carta virável com mão apontando (RF03), leitura complementar em acordeão (RF04) e balão de referências teóricas (RF05).
-- [x] Reinício completo do questionário.
+- [x] Reinício imediato do questionário pelo botão REINICIAR, com nova randomização.
 - [x] Testes do fluxo completo da aplicação.
+- [ ] Publicação no subdomínio da OPETIC.
 
-> As funcionalidades concluídas referem-se à camada de aplicação e à infraestrutura já implementadas. A interface visual completa ainda está em desenvolvimento.
+> Os itens em aberto, e as validações que dependem de outras pessoas, estão detalhados em *Status do projeto*.
 
 ## Perfis de personalidade
 
@@ -35,6 +37,14 @@ O questionário trabalha com quatro perfis:
 | `ESPADA` | Espada | Justiça |
 
 O resultado é calculado a partir dos perfis associados às opções escolhidas pelo usuário. Em caso de empate, o sistema preserva todos os perfis empatados, evitando escolher arbitrariamente um único resultado.
+
+## Como o quiz funciona
+
+- **Início:** o botão INICIAR começa uma nova execução. A ordem das situações e das alternativas é sorteada a cada execução, sem alterar a pontuação.
+- **Responder:** ao escolher uma alternativa, a resposta é registrada, a escolha fica em destaque por um instante e o quiz avança sozinho para a próxima situação.
+- **Consultar:** o botão ANTERIOR volta às situações já respondidas. As respostas aparecem bloqueadas e o avanço é feito pelo botão PRÓXIMO. A consulta não altera as respostas nem o resultado.
+- **Resultado:** a carta do perfil identificado (ou as cartas dos perfis empatados) aparece de frente, com uma mão apontando que orienta o primeiro clique. Um clique vira a carta e revela o subtítulo, o resumo e o botão **LEIA MAIS SOBRE O SEU PERFIL**, que abre os dez tópicos complementares. As expressões com referência teórica ficam destacadas e, ao serem clicadas, mostram um balão com as obras.
+- **Reiniciar:** o botão REINICIAR, na tela de resultado, começa imediatamente uma nova execução, sem voltar à tela inicial e sem aproveitar respostas anteriores.
 
 ## Conteúdo do quiz (arquivos JSON)
 
@@ -59,7 +69,7 @@ Regras para editar `referencia.json`:
 - **TypeScript** — tipagem estática.
 - **Vite** — ambiente de desenvolvimento e build.
 - **JSON** — armazenamento inicial dos dados do questionário.
-- **Testes automatizados** — validação dos casos de uso e do repositório.
+- **Testes automatizados** — validação da tentativa, dos casos de uso, do repositório e dos arquivos de conteúdo.
 
 ## Arquitetura do projeto
 
@@ -190,7 +200,15 @@ Os principais comportamentos verificados incluem:
 
 **Em desenvolvimento.**
 
-A primeira etapa concentra-se na estruturação do domínio, nos casos de uso, no repositório de dados e nos testes automatizados. As próximas etapas priorizam a construção da interface e a integração do fluxo completo do questionário.
+O domínio, os casos de uso, o acesso aos dados e a interface principal (tela inicial, situações, resultado com carta virável, leitura complementar e referências teóricas) estão implementados. Os testes automatizados cobrem a tentativa, a pontuação, a preparação da tentativa, a montagem dos tópicos com referências e a integridade dos arquivos de conteúdo.
+
+Pendências da especificação (versão 1.3):
+
+- Validar com o professor responsável a apresentação do resultado em caso de empate. Por enquanto, todos os perfis empatados na maior pontuação são exibidos.
+- Validar o conteúdo textual dos tópicos complementares e a associação das referências às expressões.
+- Definir como o link do quiz será incluído na navegação do site da OPETIC.
+- Combinar com a equipe do site os procedimentos de publicação e de atualização no subdomínio.
+- Cobrir o fluxo completo da interface com testes automatizados.
 
 ## Licença
 
