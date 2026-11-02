@@ -1,28 +1,21 @@
-
-/* Página de resultado */
 .resultado-page {
   min-height: 100vh;
   min-height: 100dvh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 32px 20px;
   color: #312964;
 }
 
-/* Área principal */
 .resultado-container {
   width: 100%;
-  max-width: 680px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 32px 24px 40px;
   background: #f7f6f6;
-  border-radius: 12px;
+  border: 1px solid #e7e1ef;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgb(49 41 100 / 8%);
 }
 
-/* Título */
 .resultado-header {
   margin-bottom: 28px;
   text-align: center;
@@ -32,158 +25,23 @@
   margin: 0;
   font-size: 20px;
   font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
-/* Organização dos perfis */
+/* As cartas ficam lado a lado quando há espaço (empate) e empilhadas nas telas estreitas. */
 .resultado-perfis {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: flex-start;
-  gap: 28px;
+  justify-content: center;
+  gap: 32px 28px;
 }
 
-/* Frente e verso de cada perfil */
-.resultado-carta {
-  display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
-  align-items: stretch;
-  border-radius: 20px;
-  gap: 16px;
-  width: 100%;
-  max-width: 460px;
-  min-width: 0;
-}
-
-/* Frente da carta */
-.resultado-carta-imagem {
-  position: relative;
-  min-width: 0;
-  aspect-ratio: 834 / 1206;
-  overflow: hidden;
-}
-
-.resultado-carta-imagem img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-}
-
-.resultado-imagem-indisponivel {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  place-items: center;
-  padding: 12px;
-  background: #312964;
-  color: #fff;
-  text-align: center;
-  overflow-wrap: anywhere;
-}
-
-/* Verso da carta */
-.resultado-verso {
-  position: relative;
-  min-width: 0;
-  width: 100%;
-  aspect-ratio: 834 / 1206;
-  overflow: hidden;
-  border-radius: 16px;
-  color: #fff;
-}
-
-.resultado-verso-imagem {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  pointer-events: none;
-}
-
-/* Conteúdo limitado à área interna do verso */
-.resultado-verso-conteudo {
-  position: absolute;
-  inset: 8% 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  min-width: 0;
-  min-height: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
-  padding: 10px 6px;
-  text-align: left;
-  scrollbar-width: thin;
-  scrollbar-color: #0784b7 transparent;
-}
-
-.resultado-verso-conteudo h2 {
-  flex-shrink: 0;
-  margin: 0 0 12px;
-  color: #fff;
-  font-size: clamp(12px, 1.3vw, 20px);
-  line-height: 1.3;
-  text-align: center;
-  overflow-wrap: anywhere;
-}
-
-.resultado-verso .resultado-descricao {
-  flex-shrink: 0;
-  margin: 0 0 12px;
-  font-size: clamp(10px, 0.95vw, 15px);
-  line-height: 1.45;
-  white-space: pre-line;
-  overflow-wrap: anywhere;
-}
-
-.resultado-verso .resultado-detalhes {
-  flex-shrink: 0;
-  width: 100%;
-  margin: 8px 0 0;
-  padding-left: 18px;
-  font-size: clamp(10px, 0.9vw, 14px);
-  line-height: 1.45;
-  overflow-wrap: anywhere;
-}
-
-.resultado-verso .resultado-detalhes li + li {
-  margin-top: 8px;
-}
-
-.resultado-verso .resultado-ver-mais {
-  align-self: center;
-  flex-shrink: 0;
-  margin: 12px 0 8px;
-  padding: 8px 12px;
-  border: 1px solid #0784b7;
-  border-radius: 6px;
-  background: #312964;
-  color: #fff;
-  font: inherit;
-  font-size: 12px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.resultado-verso .resultado-ver-mais:hover {
-  background: #4338ca;
-}
-
-.resultado-verso .resultado-ver-mais:focus-visible,
-.resultado-botao:focus-visible {
-  outline: 3px solid #ee8222;
-  outline-offset: 3px;
-}
-
-/* Botão de reinício */
+/* Botão para reiniciar o quiz */
 .resultado-botao {
   display: block;
   min-height: 46px;
-  margin: 28px auto 0;
+  margin: 36px auto 0;
   padding: 12px 22px;
   border: 0;
   border-radius: 8px;
@@ -199,49 +57,28 @@
   background: #4338ca;
 }
 
-/* Tablets e celulares */
-@media (max-width: 600px) {
+.resultado-botao:focus-visible {
+  outline: 3px solid #ee8222;
+  outline-offset: 3px;
+}
+
+/* Celulares */
+@media (max-width: 480px) {
   .resultado-page {
-    justify-content: flex-start;
-    padding: 20px 12px;
+    padding: 16px 12px;
   }
 
   .resultado-container {
-    padding: 12px;
-  }
-
-  .resultado-perfis {
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-  }
-
-  .resultado-carta {
-    gap: 10px;
-    max-width: 460px;
-  }
-
-  .resultado-verso-conteudo {
-    inset: 7% 7%;
-    padding: 8px 4px;
-  }
-
-  .resultado-verso-conteudo h2 {
-    font-size: clamp(11px, 3.2vw, 15px);
-  }
-
-  .resultado-verso .resultado-descricao {
-    font-size: clamp(10px, 2.8vw, 13px);
-    line-height: 1.4;
-  }
-
-  .resultado-verso .resultado-detalhes {
-    font-size: clamp(10px, 2.6vw, 12px);
-  }
-
-  .resultado-verso .resultado-ver-mais {
-    padding: 6px 8px;
-    font-size: 11px;
+    padding: 24px 14px 32px;
   }
 }
 
+@media (max-width: 360px) {
+  .resultado-page {
+    padding: 12px 8px;
+  }
+
+  .resultado-container {
+    padding: 20px 10px 28px;
+  }
+}

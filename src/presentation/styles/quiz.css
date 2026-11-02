@@ -68,6 +68,11 @@
   line-height: 1.25;
 }
 
+/* O título recebe foco por código ao trocar de situação; não é um controle. */
+.quiz-situacao h1:focus {
+  outline: none;
+}
+
 .quiz-numero {
   margin-bottom: 12px;
   color: #ee8222;
@@ -110,7 +115,8 @@
 
   transition:
     border-color 150ms ease,
-    background-color 150ms ease;
+    background-color 150ms ease,
+    opacity 150ms ease;
 }
 
 .quiz-opcao:hover:not(:disabled) {
@@ -139,6 +145,76 @@
   border-radius: 50%;
   background: #eeeaf7;
   font-weight: 700;
+}
+
+/*
+ * Feedback imediato ao escolher uma alternativa, antes do avanço automático:
+ * a escolhida pulsa e ganha o ícone de confirmação; as demais esmaecem.
+ */
+.quiz-opcao-confirmada {
+  animation: quiz-opcao-confirmar 380ms ease-out;
+}
+
+.quiz-opcao-confirmada .quiz-opcao-letra {
+  background: #ee8222;
+  color: #312964;
+}
+
+.quiz-opcao-check {
+  width: 16px;
+  height: 16px;
+  animation: quiz-check-aparecer 220ms ease-out both;
+}
+
+.quiz-opcao-check path {
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.quiz-opcoes-confirmando .quiz-opcao:not(.quiz-opcao-selecionada) {
+  opacity: 0.5;
+}
+
+@keyframes quiz-opcao-confirmar {
+  0% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes quiz-check-aparecer {
+  from {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Texto lido apenas por leitores de tela: anuncia que a resposta foi registrada. */
+.quiz-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
 
 .quiz-acoes {
@@ -210,5 +286,12 @@
 
   .quiz-botao {
     width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quiz-opcao-confirmada,
+  .quiz-opcao-check {
+    animation: none;
   }
 }

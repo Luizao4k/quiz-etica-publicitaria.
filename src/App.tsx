@@ -1,62 +1,69 @@
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import { CarregarQuiz } from "./application/use_cases/CarregarQuiz";
-import { RegistrarResposta } from "./application/use_cases/RegistrarResposta";
 import { prepararTentativa } from "./application/services/prepararTentativa";
 import { CalcularResultado } from "./application/use_cases/CalcularResultado";
 import { ResultadoPage } from "./presentation/pages/ResultadoPage";
-import type { ResultadoQuiz } from "./application/use_cases/CalcularResultado";
 
 import { QuizRepositoryJson } from "./infrastructure/repositories/QuizRepositoryJson";
 
-import type { Quiz } from "./domain/entities/Quiz";
+import type { Tentativa } from "./domain/entities/Tentativa";
 
 import { InicioPage } from "./presentation/pages/InicioPage";
 import { QuizPage } from "./presentation/pages/QuizPage";
 
 const repositorio = new QuizRepositoryJson();
 const carregarQuiz = new CarregarQuiz(repositorio);
+const calcularResultado = new CalcularResultado();
 
 function App() {
-  const [quiz, setQuiz] = useState<Quiz | null>(null);
+  const [tentativa, setTentativa] = useState<Tentativa | null>(null);
 
-  const [registrarResposta, setRegistrarResposta] =
-    useState<RegistrarResposta | null>(null);
+  // Cada troca de tela ou de situação começa no topo da página. Sem isso, o
+  // avanço automático deixaria o participante no meio da situação seguinte.
+  const posicao = !tentativa
+    ? "inicio"
+    : tentativa.finalizada
+      ? "resultado"
+      : tentativa.indiceAtual;
 
-  const [resultado, setResultado] = useState<ResultadoQuiz | null>(null);
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [posicao]);
 
   function iniciarQuiz() {
-    const dados = carregarQuiz.executar();
-    const novaTentativa = prepararTentativa(dados);
-
-    setResultado(null);
-    setRegistrarResposta(new RegistrarResposta());
-    setQuiz(novaTentativa);
+    setTentativa(prepararTentativa(carregarQuiz.executar()));
   }
 
-  function finalizarQuiz() {
-    if (!quiz || !registrarResposta) {
-      return;
-    }
-
-    const calcularResultado = new CalcularResultado();
-
-    const resultadoCalculado = calcularResultado.executar(
-      quiz.perfis,
-      registrarResposta.obterRespostas(),
+  // As transições usam a forma funcional do setState e só agem quando a regra
+  // da tentativa permite, evitando erros por cliques repetidos ou atrasados.
+  const responder = useCallback((opcaoId: string) => {
+    setTentativa((atual) =>
+      atual?.podeResponder ? atual.responder(opcaoId) : atual,
     );
+  }, []);
 
-    setResultado(resultadoCalculado);
-  }
+  const avancar = useCallback(() => {
+    setTentativa((atual) => (atual?.podeAvancar ? atual.avancar() : atual));
+  }, []);
 
-  if (!quiz || !registrarResposta) {
+  const voltar = useCallback(() => {
+    setTentativa((atual) => (atual?.podeVoltar ? atual.voltar() : atual));
+  }, []);
+
+  if (!tentativa) {
     return <InicioPage onIniciar={iniciarQuiz} />;
   }
 
-  if (resultado && quiz) {
+  if (tentativa.finalizada) {
+    const resultado = calcularResultado.executar(
+      tentativa.quiz.perfis,
+      tentativa.opcoesSelecionadas(),
+    );
+
     return (
       <ResultadoPage
-        quiz={quiz}
+        quiz={tentativa.quiz}
         resultado={resultado}
         onReiniciar={iniciarQuiz}
       />
@@ -65,12 +72,12 @@ function App() {
 
   return (
     <QuizPage
-      quiz={quiz}
-      registrarResposta={registrarResposta}
-      onFinalizar={finalizarQuiz}
+      tentativa={tentativa}
+      onResponder={responder}
+      onAvancar={avancar}
+      onVoltar={voltar}
     />
   );
-
 }
 
 export default App;

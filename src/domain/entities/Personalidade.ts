@@ -1,3 +1,4 @@
+import type { Detalhe } from "./Detalhe";
 
 /**
  * Representa um perfil de personalidade do questionário de ética publicitária.
@@ -18,6 +19,9 @@ export interface Personalidade {
   /** Descrição detalhada das características do perfil. */
   descricao: string;
 
-  /** Lista de características e informações complementares do perfil. */
-  detalhes: string[];
+  /**
+   * Tópicos complementares do perfil, na ordem de apresentação.
+   * As expressões com referência teórica já vêm separadas em trechos.
+   */
+  detalhes: Detalhe[];
 }

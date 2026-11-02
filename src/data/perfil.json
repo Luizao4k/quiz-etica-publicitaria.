@@ -1,0 +1,76 @@
+{
+  "perfis": [
+    {
+      "id": "ARCO_E_FLECHA",
+      "titulo": "Carta Arco e Flecha",
+      "subtitulo": "Seu Perfil é de Execução",
+      "descricao": "Você é uma pessoa pontual e focada em resultados. Prioriza estabilidade financeira e segurança no emprego. Segue instruções e prazos sem questionar. Evita conflitos e riscos, mesmo que isso signifique se acomodar em práticas comuns. Valoriza seus próprios interesses e busca atender às expectativas dos clientes sem se envolver em questões éticas mais profundas, contribuindo para a desconfiança da sociedade em relação à publicidade.",
+      "detalhes": [
+        "Enxerga o estágio como uma lista de tarefas a ser concluída para ir para casa no fim do dia. Entende que quem estagia não está em posição de contestar, mesmo diante de argumentos enganosos na publicidade.",
+        "É pontual, segue prazos e instruções sem questionar. Entrega resultados sem desafiar normas ou políticas institucionais controversas, executando metas corporativas.",
+        "Valoriza a segurança no emprego e a estabilidade financeira, mantendo foco no trabalho e evitando embates, especialmente com clientes ou chefes/líderes, contribuindo para um ambiente produtivo.",
+        "Prefere não correr riscos, mesmo que essa atitude signifique reproduzir estereótipos.",
+        "Prioriza fatores pessoais ao tomar decisões, valorizando a ética de bem-viver.",
+        "Não considera o impacto de suas decisões publicitárias no público consumidor porque prioriza seus próprios interesses sem abrir espaço para sacrifícios pelo outro.",
+        "Adepto à cultura do individualismo, exalta os direitos individuais, a autonomia, a felicidade; viver e desfrutar.",
+        "Valoriza o ditado popular 'o cliente sempre tem razão', privilegedando a satisfação do anunciante para não se incomodar nem se envolver.",
+        "Apresenta tendência de se acomodar no status quo, sem enfrentar desafios que exigem mudanças significativas.",
+        "Demonstra indiferença a questões éticas e morais na atividade publicitária, reforçando a ideia de que a publicidade não é totalmente confiável."
+      ]
+    },
+    {
+      "id": "ESPELHO",
+      "titulo": "Carta Espelho",
+      "subtitulo": "Seu Perfil é de Autoconfiança",
+      "descricao": "Você é uma pessoa ambiciosa e determinada. Capaz de tomar decisões ágeis, nem sempre reflete sobre as implicações éticas. Decidida em crescer profissionalmente, trabalha com metas claras. Às vezes não segue os princípios da transparência e da veracidade nos relacionamentos da atividade publicitária. Apresenta dificuldade em flexibilizar suas opiniões, colocando seus próprios sentimentos e valores individuais acima de normas morais, empresariais e sociais.",
+      "detalhes": [
+        "Assume riscos para alcançar o sucesso, mas pode ser visto como insensível devido ao foco em si mesmo.",
+        "Questiona padrões ou normas, contanto que não prejudiquem seu progresso profissional.",
+        "Prioriza seus próprios interesses em detrimento do coletivo, sem equilibrar o êxito individual com o trabalho em equipe.",
+        "Em situações complexas, pode agir de maneira egoísta para se proteger.",
+        "Apresenta dificuldade em tomar decisões que comprometam seus valores pessoais.",
+        "Resiste a mudanças e feedbacks, demonstrando excesso de confiança e traços narcisistas.",
+        "Pode ser percebida como uma pessoa autoritária, especialmente ao defender suas opiniões e valores de forma direta e objetiva.",
+        "Prioriza seu bem-viver ao tomar decisões éticas, confiando na correção ética de suas ações e julgamentos, sem questionar a moralidade e a legalidade de seus atos.",
+        "Abre mão de valores morais, se necessário, para persuadir ou convencer o público-alvo.",
+        "Seus comportamentos podem levar a uma visão distorcida sobre injustiças, afetando outros e a si mesmo."
+      ]
+    },
+    {
+      "id": "BALANCA",
+      "titulo": "Carta Balança",
+      "subtitulo": "Seu Perfil é de Equilíbrio",
+      "descricao": "Você é uma pessoa habilidosa para lidar com as exigências profissionais de anunciantes e agências sem renunciar a seus próprios valores pessoais, assegurando que suas decisões estejam alinhadas a princípios éticos universais. Sua abordagem de buscar promover interesses comuns pode, no entanto, resultar em uma postura permissiva diante da criação e da manutenção de estereótipos nas mensagens publicitárias.",
+      "detalhes": [
+        "Defende os interesses comerciais de anunciantes e das empresas de comunicação publicitária.",
+        "Aceita pressões para assegurar a sobrevivência da empresa e proteger empregos, comprometendo-se com o benefício mútuo e com o sucesso coletivo da equipe e da organização.",
+        "Concilia interesses particulares com a defesa às normas e princípios institucionais empresariais.",
+        "Trabalha para manter um clima organizacional humano e agradável para a agência e seus clientes, atuando como mediador para resolver conflitos quando surgem interesses divergentes.",
+        "Demonstra flexibilidade ao ajustar suas ações às circunstâncias do ambiente de trabalho, resguardando valores, costumes, rituais e tradições do anunciante nas estratégias publicitárias.",
+        "Evita tomar partido em situações controversas para preservar a boa relação com colegas e superiores, buscando integração, pertencimento e o fortalecimento da rede profissional.",
+        "Aceita determinados comportamentos comuns entre colegas e práticas recorrentes no mercado publicitário, justificando-os com a ideia de que 'Publicidade é assim mesmo'.",
+        "Ao seguir ordens de pessoas em posição de autoridade, alega estar 'apenas atendendo pedidos'.",
+        "A obediência à autoridade de um superior e o exemplo dos pares interfere no seu comportamento ético.",
+        "Ao se comprometer a preservar a imagem do cliente, da empresa de publicidade em que trabalha ou até mesmo a própria, pode acabar ignorando desigualdades e injustiças no processo."
+      ]
+    },
+    {
+      "id": "ESPADA",
+      "titulo": "Carta Espada",
+      "subtitulo": "Seu Perfil é de Justiça",
+      "descricao": "Você é uma pessoa ética, autêntica e comprometida com a transparência. Cria estratégias publicitárias alinhadas aos valores do público e da sociedade. Possui sensibilidade moral para identificar conflitos éticos, evitando reforçar estereótipos e buscando uma publicidade educativa. Resiliente, valoriza a integridade, denuncia injustiças e trabalha para transformar seu espaço profissional com senso de responsabilidade social.",
+      "detalhes": [
+        "Planeja com foco nos valores do público-alvo, avaliando o impacto positivo ou negativo da estratégia publicitária na vida das pessoas.",
+        "Preocupa-se com todos os públicos envolvidos na indústria publicitária, esforçando-se pelo que é justo para todos.",
+        "Acredita em uma publicidade educadora, próxima da realidade e crítica. Uma publicidade que debate e problematiza, além de objetivos comerciais.",
+        "Evita reforçar estereótipos, considerando implicações morais durante o processo de planejamento, criação e produção da mensagem publicitária.",
+        "Procura fazer a diferença na profissão, adotando práticas profissionais cidadãs ao tomar decisões na atividade publicitária para não ultrapassar limites éticos.",
+        "Preza pela veracidade nas mensagens publicitárias e nos relacionamentos profissionais.",
+        "Denuncia injustiças publicamente, mesmo diante de críticas ou desvalorização da sua postura ética.",
+        "Aprecia a autenticidade, alinhando seus princípios aos valores da sociedade, apesar das pressões do ambiente publicitário.",
+        "Defende seus direitos com o objetivo de transformar seu espaço de atuação profissional, desafiando normas e práticas do mercado publicitário que considera inadequadas.",
+        "Prioriza a ética e a integridade acima de conveniências no mundo do trabalho publicitário, contribuindo para a credibilidade da indústria da propaganda."
+      ]
+    }
+  ]
+}

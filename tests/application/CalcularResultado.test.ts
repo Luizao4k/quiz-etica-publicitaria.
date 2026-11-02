@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { CalcularResultado } from "../../../quiz-etica-publicitaria/src/application/use_cases/CalcularResultado";
-import { Personalidade } from "../../../quiz-etica-publicitaria/src/domain/entities/Personalidade";
-import { Opcao } from "../../../quiz-etica-publicitaria/src/domain/entities/Opcao";
+import { CalcularResultado } from "../../src/application/use_cases/CalcularResultado";
+import type { Personalidade } from "../../src/domain/entities/Personalidade";
+import type { Opcao } from "../../src/domain/entities/Opcao";
 
 const perfis: Personalidade[] = [
   {

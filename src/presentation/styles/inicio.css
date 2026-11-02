@@ -1,7 +1,7 @@
 
-/*
+/**
  * Página inicial.
- * Controla a arte e o botão de início.
+ * Controla o dimensionamento da arte e o botão de início.
  */
 
 .inicio-page {
@@ -14,27 +14,30 @@
   justify-content: center;
 
   width: 100%;
-  height: 100vh;
-  height: 100dvh;
-  padding: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 20px;
 
   overflow: hidden;
   background: transparent;
 }
 
 
-
-
 .inicio-arte {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  width: min(100vw, 100dvh);
+  width: min(
+    calc(100vw - 40px),
+    calc(100dvh - 40px),
+    850px
+  );
+
   aspect-ratio: 1 / 1;
-  height: auto;
-  flex: 0 1 auto;
+  flex-shrink: 0;
+  overflow: hidden;
+
+  border: 1px solid transparent;
+  border-radius: 20px;
 }
 
 .inicio-imagem {
@@ -43,11 +46,11 @@
   width: 100%;
   height: 100%;
 
+  /* Preserva a proporção original da imagem. */
   object-fit: contain;
   object-position: center;
 }
 
-/* Mantém o botão alinhado à arte nos celulares. */
 .inicio-botao {
   position: absolute;
   z-index: 2;
@@ -61,20 +64,20 @@
   border: none;
   border-radius: 12px;
   background: transparent;
+
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
-
-
 .inicio-botao:hover {
-  background-color: rgb(49 41 100 / 22%);
-  box-shadow:
-    0 0 0 2px #ffcf9e,
-    0 0 12px rgb(49 41 100 / 25%);
+  background-color: rgb(255 255 255 / 12%);
+  box-shadow: 0 0 0 2px rgb(255 255 255 / 70%);
 }
 
 .inicio-botao:active {
-  background-color: rgb(49 41 100 / 35%);
-  box-shadow: 0 0 0 2px #fff;
+  background-color: rgb(255 255 255 / 22%);
   transform: scale(0.97);
 }
 
@@ -83,44 +86,38 @@
   outline-offset: 3px;
 }
 
-
-/* Celulares */
-/* Telas menores */
-@media (max-width: 48rem) {
-  .inicio-botao {
-    top: 87.7%;
-  }
-}
-
-/* Notebooks e computadores */
-@media (min-width: 1024px) and (min-height: 700px) and (min-aspect-ratio: 1/1) {
-  .inicio-arte {
-    width: 100%;
-    height: 90%;
-  }
-
-  .inicio-imagem {
+@media (max-width: 100px) {
+  .inicio-page {
+    position: fixed;
+    inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    min-height: 0;
+    padding: 12px;
+    overflow: hidden;
   }
-}
 
-/* Telas largas com pouca altura */
-@media (min-width: 48.01rem) and (max-height: 600px) {
   .inicio-arte {
-    width: 100%;
-    height: 80%;
+    width: min(
+      calc(100vw - 24px),
+      calc(100dvh - 24px)
+    );
+    aspect-ratio: 1 / 1;
+    flex-shrink: 1;
   }
 }
 
-/* Ajuste fino para telas horizontais */
-@media (min-width: 1024px) and
-       (min-height: 700px) and
-       (min-aspect-ratio: 3/2) {
+@media (min-width: 1200px) and (min-height: 200px) {
+  .inicio-page {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
-  .inicio-botao {
-    width: 8.7%;
-    left: 45.6%;
+  .inicio-arte {
+    height: 100dvh;
+    width: auto;
+    max-width: 100vw;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 1;
   }
 }

@@ -1,0 +1,157 @@
+
+{
+  "referencias": [
+    {
+      "id": "arco-flecha-ref-01",
+      "perfilId": "ARCO_E_FLECHA",
+      "expressao": "ética de bem-viver",
+      "obras": [
+        {
+          "autor": "HABERMAS, Jürgen",
+          "titulo": "A inclusão do outro"
+        },
+        {
+          "autor": "HABERMAS, Jürgen",
+          "titulo": "Mudança estrutural da esfera pública"
+        }
+      ]
+    },
+    {
+      "id": "arco-flecha-ref-02",
+      "perfilId": "ARCO_E_FLECHA",
+      "expressao": "outro",
+      "obras": [
+        {
+          "autor": "ECO, Umberto",
+          "titulo": "Cinco escritos morais"
+        },
+        {
+          "autor": "BAUMAN, Zygmunt",
+          "titulo": "Ética pós-moderna"
+        }
+      ]
+    },
+    {
+      "id": "arco-flecha-ref-03",
+      "perfilId": "ARCO_E_FLECHA",
+      "expressao": "cultura do individualismo",
+      "obras": [
+        {
+          "autor": "LIPOVETSKY, Gilles",
+          "titulo": "O crepúsculo do dever"
+        },
+        {
+          "autor": "TOALDO, Mariângela",
+          "titulo": "Cenário publicitário brasileiro: anúncios e moralidade contemporânea"
+        }
+      ]
+    },
+    {
+      "id": "espelho-ref-01",
+      "perfilId": "ESPELHO",
+      "expressao": "egoísta",
+      "obras": [
+        {
+          "autor": "PRENTICE, Robert",
+          "titulo": "Teaching Ethics, Heuristics, And Biases"
+        }
+      ]
+    },
+    {
+      "id": "espelho-ref-02",
+      "perfilId": "ESPELHO",
+      "expressao": "excesso de confiança",
+      "obras": [
+        {
+          "autor": "PRENTICE, Robert",
+          "titulo": "Teaching Ethics, Heuristics, And Biases"
+        }
+      ]
+    },
+    {
+      "id": "espelho-ref-03",
+      "perfilId": "ESPELHO",
+      "expressao": "bem-viver",
+      "obras": [
+        {
+          "autor": "HABERMAS, Jürgen",
+          "titulo": "A inclusão do outro"
+        },
+        {
+          "autor": "HABERMAS, Jürgen",
+          "titulo": "Mudança estrutural da esfera pública"
+        }
+      ]
+    },
+    {
+      "id": "espelho-ref-04",
+      "perfilId": "ESPELHO",
+      "expressao": "outros",
+      "obras": [
+        {
+          "autor": "ECO, Umberto",
+          "titulo": "Cinco escritos morais"
+        },
+        {
+          "autor": "BAUMAN, Zygmunt",
+          "titulo": "Ética pós-moderna"
+        }
+      ]
+    },
+    {
+      "id": "balanca-ref-01",
+      "perfilId": "BALANCA",
+      "expressao": "Aceita pressões",
+      "obras": [
+        {
+          "autor": "PRENTICE, Robert",
+          "titulo": "Teaching Ethics, Heuristics, And Biases"
+        }
+      ]
+    },
+    {
+      "id": "balanca-ref-02",
+      "perfilId": "BALANCA",
+      "expressao": "normas e princípios institucionais empresariais",
+      "obras": [
+        {
+          "autor": "DRUMWRIGHT, Minette",
+          "titulo": "Advertising Ethics: A Multi-Level Theory Approach"
+        }
+      ]
+    },
+    {
+      "id": "balanca-ref-03",
+      "perfilId": "BALANCA",
+      "expressao": "obediência à autoridade",
+      "obras": [
+        {
+          "autor": "PRENTICE, Robert",
+          "titulo": "Teaching Ethics, Heuristics, And Biases"
+        }
+      ]
+    },
+    {
+      "id": "espada-ref-01",
+      "perfilId": "ESPADA",
+      "expressao": "práticas profissionais cidadãs",
+      "obras": [
+        {
+          "autor": "GIACOMINI FILHO, Gino; LICHT, Rene",
+          "titulo": "Fronteiras éticas da publicidade"
+        }
+      ]
+    },
+    {
+      "id": "espada-ref-02",
+      "perfilId": "ESPADA",
+      "expressao": "pressões do ambiente publicitário",
+      "obras": [
+        {
+          "autor": "DRUMWRIGHT, Minette",
+          "titulo": "Ethics and Advertising Theory"
+        }
+      ]
+    }
+  ]
+}
