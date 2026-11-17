@@ -68,10 +68,12 @@ function responderPorIds(tentativa: Tentativa, opcoesIds: string[]): Tentativa {
   );
 }
 
+
 /** Indicações por perfil, calculadas pelo mesmo caso de uso usado pela aplicação. */
 function pontuacoesDe(tentativa: Tentativa): Record<string, number> {
   const resultado = new CalcularResultado().executar(
     tentativa.quiz.perfis,
+    tentativa.quiz.situacoes,
     tentativa.opcoesSelecionadas(),
   );
 

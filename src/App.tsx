@@ -3,7 +3,6 @@ import { useCallback, useEffect, useState } from "react";
 import { CarregarQuiz } from "./application/use_cases/CarregarQuiz";
 import { prepararTentativa } from "./application/services/prepararTentativa";
 import { CalcularResultado } from "./application/use_cases/CalcularResultado";
-import { ResultadoPage } from "./presentation/pages/ResultadoPage";
 
 import { QuizRepositoryJson } from "./infrastructure/repositories/QuizRepositoryJson";
 
@@ -11,6 +10,7 @@ import type { Tentativa } from "./domain/entities/Tentativa";
 
 import { InicioPage } from "./presentation/pages/InicioPage";
 import { QuizPage } from "./presentation/pages/QuizPage";
+import { ResultadoPage } from "./presentation/pages/ResultadoPage";
 
 const repositorio = new QuizRepositoryJson();
 const carregarQuiz = new CarregarQuiz(repositorio);
@@ -58,7 +58,9 @@ function App() {
   if (tentativa.finalizada) {
     const resultado = calcularResultado.executar(
       tentativa.quiz.perfis,
+      tentativa.quiz.situacoes,
       tentativa.opcoesSelecionadas(),
+
     );
 
     return (

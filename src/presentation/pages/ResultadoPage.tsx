@@ -1,10 +1,7 @@
-
-import { useState } from "react";
-
 import type { Quiz } from "../../domain/entities/Quiz";
 import type { ResultadoQuiz } from "../../application/use_cases/CalcularResultado";
 import { CartaPerfil } from "../components/CartaPerfil";
-import { BotaoCompartilhar } from "../components/BotaoCompartilhar";
+/*import { BotaoCompartilhar } from "../components/BotaoCompartilhar";*/
 
 import "../styles/resultado.css";
 
@@ -32,11 +29,11 @@ export function ResultadoPage({
     resultado,
     onReiniciar,
 }: ResultadoPageProps) {
-    const [dicaVisivel, setDicaVisivel] = useState(true);
 
-    const perfisIndicados = quiz.perfis.filter((perfil) =>
+
+    const perfilIndicado = quiz.perfis.find((perfil) =>
         resultado.perfisMaisIndicados.some(
-            (perfilIndicado) => perfilIndicado.id === perfil.id,
+            (perfilResultado) => perfilResultado.id === perfil.id,
         ),
     );
 
@@ -45,27 +42,23 @@ export function ResultadoPage({
             <section className="resultado-container">
                 <header className="resultado-header">
                     <h1>
-                        {perfisIndicados.length > 1
-                            ? "ESTAS SÃO SUAS CARTAS"
-                            : "ESTA É SUA CARTA"}
+                        {perfilIndicado?.subtitulo.toUpperCase()}
                     </h1>
                 </header>
 
                 <div className="resultado-perfis">
-                    {perfisIndicados.map((perfil, indice) => (
+                    {perfilIndicado && (
                         <CartaPerfil
-                            key={perfil.id}
-                            perfil={perfil}
-                            imagemFrente={imagensCartas[perfil.id]}
+                            key={perfilIndicado.id}
+                            perfil={perfilIndicado}
+                            imagemFrente={imagensCartas[perfilIndicado.id]}
                             imagemVerso={versoCarta}
-                            mostrarDica={dicaVisivel && indice === 0}
-                            onVirar={() => setDicaVisivel(false)}
                         />
-                    ))}
+                    )}
                 </div>
 
                 <div className="resultado-acoes">
-                    <BotaoCompartilhar />
+                    {/* <BotaoCompartilhar /> */}
 
                     <button
                         type="button"

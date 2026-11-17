@@ -6,7 +6,7 @@ import facebookIcon from "../assets/image/icone/facebook-icon.png";
 import whatsappIcon from "../assets/image/icone/whatsapp-icon.png";
 import xIcon from "../assets/image/icone/x-icon.png";
 
-export function BotaoCompartilhar() {
+/* export function BotaoCompartilhar() {
     const [aberto, setAberto] = useState(false);
     const [mensagem, setMensagem] = useState("");
 
@@ -148,3 +148,4 @@ export function BotaoCompartilhar() {
         </>
     );
 }
+*/

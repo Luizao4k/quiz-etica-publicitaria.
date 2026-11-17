@@ -66,18 +66,33 @@ export function TopicosPerfil({ detalhes, ativa, onAlternar }: TopicosPerfilProp
         // A seta aponta para o centro da expressão (na primeira linha, se ela quebrar).
         const setaX = retanguloTexto
             ? Math.min(
-                  Math.max(
-                      retanguloExpressao.left +
-                          retanguloExpressao.width / 2 -
-                          retanguloTexto.left,
-                      16,
-                  ),
-                  Math.max(retanguloTexto.width - 16, 16),
-              )
+                Math.max(
+                    retanguloExpressao.left +
+                    retanguloExpressao.width / 2 -
+                    retanguloTexto.left,
+                    16,
+                ),
+                Math.max(retanguloTexto.width - 16, 16),
+            )
             : 24;
 
         onAlternar({ topico, trecho, referencia, setaX });
     }
+
+
+    function aoPassarMouse(
+        evento: MouseEvent<HTMLElement>,
+        topico: number,
+        trecho: number,
+        referencia: Referencia,
+    ) {
+        if (!window.matchMedia("(hover: hover)").matches) {
+            return;
+        }
+
+        acionar(evento, topico, trecho, referencia);
+    }
+
 
     return (
         <ol className="topicos" role="list">
@@ -116,9 +131,35 @@ export function TopicosPerfil({ detalhes, ativa, onAlternar }: TopicosPerfilProp
                                             data-expressao=""
                                             aria-expanded={aberta}
                                             aria-controls={aberta ? idBalao : undefined}
-                                            onClick={(evento) =>
-                                                acionar(evento, indiceTopico, indiceTrecho, referencia)
+                                            onMouseEnter={(evento) =>
+                                                aoPassarMouse(
+                                                    evento,
+                                                    indiceTopico,
+                                                    indiceTrecho,
+                                                    referencia,
+                                                )
                                             }
+                                            onMouseLeave={() => {
+                                                if (window.matchMedia("(hover: hover)").matches) {
+                                                    onAlternar({
+                                                        topico: indiceTopico,
+                                                        trecho: indiceTrecho,
+                                                        referencia,
+                                                        setaX: 0,
+                                                    });
+                                                }
+                                            }}
+                                            onClick={(evento) => {
+                                                if (!window.matchMedia("(hover: hover)").matches) {
+                                                    acionar(
+                                                        evento,
+                                                        indiceTopico,
+                                                        indiceTrecho,
+                                                        referencia,
+                                                    );
+                                                }
+                                            }}
+
                                             onKeyDown={(evento) => {
                                                 if (evento.key === "Enter" || evento.key === " ") {
                                                     evento.preventDefault();
